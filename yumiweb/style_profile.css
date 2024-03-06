@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #023020;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.profile-photo {
+    width: 500px; /* Adjust the size as needed */
+    height: 500px; /* Adjust the size as needed */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+
+.profile-photo:hover {
+    box-shadow: 0 0 0 10px #ECE3CE;
+}
+
+.social-media-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-media h1 {
+    font-size: 40px;
+    margin: 10px 0;
+    margin-bottom: 20px;
+    color: #ECE3CE;
+}
+
+.social-media i {
+    font-size: 36px;
+    margin: 0 10px;
+}
+
+/* Style the icons */
+.social-media .fa-facebook {
+    color: #ECE3CE; /* Facebook color */
+    font-size: 70px;
+    transition: ease 0.3s;
+}
+
+.social-media .fa-facebook:hover {
+    color: #4c8ada; /* Facebook color */
+    font-size: 70px;
+}
+
+.social-media .fa-github {
+    color: #ECE3CE; /* GitHub color */
+    font-size: 70px;
+    transition: ease 0.3s;
+}
+
+.social-media .fa-github:hover {
+    color: #dfb963; /* GitHub color */
+    font-size: 70px;
+}
+
+/* Add this CSS for styling the button */
+.top-left-button {
+    position: fixed;
+    top: 25px;
+    left: 35px;
+    padding: 10px;
+    background-color: #023020; /* Adjust the background color */
+    color: #ECE3CE;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    border: 1px solid #ECE3CE;
+}
+
+.top-left-button:hover {
+    border: 1px solid #023020;
+    background-color: #ECE3CE;
+    color: #023020;
+}
+
+/* Add this CSS to ensure the button is not covered by other elements */
+.image-container, .social-media-container {
+    margin-top: 40px; /* Adjust the margin based on your design */
+}
+

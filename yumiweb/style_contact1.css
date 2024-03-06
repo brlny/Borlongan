@@ -1,0 +1,103 @@
+body {
+    background-color: #ECE3CE;
+    font-family: 'Kanit', sans-serif;
+    margin: 0; /* Remove default body margin */
+    overflow-x: hidden; /* Hide horizontal scroll */
+}
+.mb-4 {
+    margin-top: 130px;
+}
+.text-center.text-md-left .btn.btn-primary {
+    background-color: #023020;
+    border: 1px solid #023020;
+    color: #ECE3CE;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    background-color: #023020; /* Green background color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    color: #fff; /* Text color */
+    border-radius: 8px;
+    text-align: center; /* Center text in the modal */
+}
+
+/* Button inside the modal */
+.modal button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #fff; /* White background color */
+    color: #023020; /* Green text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.modal p {
+    margin-top: 120px;
+    font-size: 30px;
+}
+
+@media screen and (max-width: 1415px) and (max-height: 768px) {
+    body {
+        margin-top: 0;
+    }
+
+    .mb-4 {
+        margin-top: 40px;
+    }
+
+    .modal {
+        top: 50%;
+    }
+
+    .modal p {
+        margin-top: 70px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        margin-top: 0;
+    }
+
+    .mb-4 {
+        margin-top: 50px;
+    }
+
+    .modal {
+        top: 50%;
+    }
+
+    .modal p {
+        margin-top: 70px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        margin-top: 0;
+    }
+
+    .mb-4 {
+        margin-top: 50px;
+    }
+
+    .modal {
+        top: 50%;
+    }
+
+    .modal p {
+        margin-top: 40px;
+        font-size: 25px;
+    }
+}
+

@@ -1,0 +1,170 @@
+/* Reset default styles and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Kanit", sans-serif;
+}
+
+/* Body styling */
+body {
+    background-image: url(Images/backg.png);
+    background-repeat: no-repeat;
+    background-position: center top; 
+    background-size: cover;
+}
+
+/* Background section styling */
+.background {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center top; /* Adjust this line to shift the image */
+    background-repeat: no-repeat;
+    position: fixed; /* Change position to fixed */
+    top: 0; /* Stick it to the top of the viewport */
+    z-index: 1000; /* Set a high z-index to ensure it's above other elements */
+}
+
+/* Navigation styling */
+.nav {
+    width: 90%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative; /* Added position relative */
+}
+
+.nav ul {
+    /* Navigation list styling */
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li {
+    /* Navigation item styling */
+    margin: 0 15px;
+    position: relative;
+    font-weight: bold;
+    color: #023020;
+    font-size: 18px;
+    text-shadow: 0px 2px 5px #ECE3CE;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #023020;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+.nav ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #023020;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+
+.nav ul li:hover::after {
+    /* Expand underline on hover */
+    width: 100%;
+}
+
+.user-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.login-btn {
+    border: 3px solid var(--main-color);
+    padding: 8px 16px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: #023020;
+    font-weight: bold;
+    border: 3px solid #023020;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: transparent;
+}
+
+.register-btn {
+    background-color: var(--main-color);
+    padding: 8px 16px;
+    margin-left: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    border: 3px solid #023020;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #023020;
+}
+
+.register-btn:hover {
+    border: 3px solid #ECE3CE;
+    background-color: #ECE3CE;
+    color: #023020;
+}
+.login-btn:hover {
+    background-color: #ECE3CE;
+}
+
+.user-buttons {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Profile photo styling */
+.profile-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+
+
+.profile-photo:hover {
+    /* Shadow effect on hover */
+    box-shadow: 0 0 0 5px #ECE3CE;
+}
+
+/* Achievements section styling */
+.achievements-section {
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.achievements-section h3 {
+    /* Achievement section heading styling */
+    font-size: 30px;
+    margin-top: 30px;
+    color: #ECE3CE;
+    text-shadow: 0px 2px 5px #023020;
+    
+}
+
+.achievements-section img {
+    /* Achievement images styling */
+    margin-top: 10px;
+    max-width: 25%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.deanslister {
+    /* Deanslister image styling */
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+}

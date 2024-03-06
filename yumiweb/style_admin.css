@@ -1,0 +1,26 @@
+body {
+    background-color: #ECE3CE;
+    font-family: 'Kanit', sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 3px solid #023020;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #023020;
+    color: #ffffff;
+}
